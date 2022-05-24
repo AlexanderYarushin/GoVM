@@ -27,3 +27,6 @@
 
 ### Example #1 - calculate factorial(5)
 ![](/factorial.png)
+
+### Example #2 - calculate and output fibonacci numbers(12)
+![](/fibonacci.png)
