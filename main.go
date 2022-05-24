@@ -12,7 +12,7 @@ import (
 func main() {
 	cliArgs := os.Args
 
-	output := "/home/fs0ciety/Desktop/GoVM/test_data/output.vmb"
+	output := "./output.vmb"
 
 	if len(cliArgs) > 1 {
 		start := time.Now()
