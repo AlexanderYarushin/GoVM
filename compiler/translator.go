@@ -70,7 +70,7 @@ func _translate(commands []string) []byte {
 			option = CommandOption["rr"]
 		}
 
-		if command == "call" || command == "jn" {
+		if Commands[command].Value >= 9 && Commands[command].Value <= 15 {
 			arg1 = strconv.Itoa(int(labelsAddress[arg1]))
 		}
 
