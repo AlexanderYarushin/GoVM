@@ -1,7 +1,11 @@
 #### This is a register-based virtual machine written in Go
-##### Registers:
+##### General registers:
     ax, bx, cx, dx, ex, fx
-##### Commands
+##### Service registers:
+    IP - instruction pointer
+	CR - compare result
+	SP - stack pointer
+##### Commands:
     mov - moving values
 	add - adding values
 	sub - substruction values
