@@ -31,7 +31,7 @@ func CheckStringDuplicate(data []string) error {
 		for j := 0; j < length; j++ {
 			if i != j {
 				if data[i] == data[j] {
-					return errors.New("duplicate labels")
+					return errors.New(Errors["DuplicateLabels"]())
 				}
 			}
 		}

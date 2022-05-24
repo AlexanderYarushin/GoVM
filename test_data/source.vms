@@ -9,8 +9,8 @@ fact:
     ret
 
 calc:
-    mul bx cx
     inc cx
-    cmp cx 6
+    mul bx cx
+    cmp cx 5
     jn calc
     ret

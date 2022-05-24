@@ -118,12 +118,11 @@ func syntaxValidate(commands []string) error {
 		}
 
 		if uint8(len(commandSplit))-1 != Commands[command].ArgsCount {
-			return errors.New("invalid number of arguments in command '" + value + "'")
-
+			return errors.New(utils.Errors["InvalidArgNum"](value))
 		}
 
 		if (Commands[command].Value == 0) && (!isLoop(command)) {
-			return errors.New("invalid command '" + command + "'")
+			return errors.New(utils.Errors["InvalidArgNum"](value))
 		}
 
 		if isLoop(command) {
@@ -162,7 +161,7 @@ func validateRegister(command string, register string) error {
 		return nil
 	}
 
-	return errors.New("invalid operand '" + register + "'")
+	return errors.New(utils.Errors["InvalidOperand"](register))
 }
 
 func isValidRegister(command string, register string) bool {
